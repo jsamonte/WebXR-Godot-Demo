@@ -26,3 +26,4 @@ pose = &"grip"
 hand_material_override = ExtResource("2_lquwl")
 
 [node name="StartXR" parent="." instance=ExtResource("4_272bh")]
+enable_passthrough = true
