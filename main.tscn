@@ -27,3 +27,5 @@ hand_material_override = ExtResource("2_lquwl")
 
 [node name="StartXR" parent="." instance=ExtResource("4_272bh")]
 enable_passthrough = true
+
+[node name="Jared" type="Node3D" parent="."]
