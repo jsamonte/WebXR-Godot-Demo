@@ -1,33 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk8vd6ihwi0i7"]
+[gd_scene format=3 uid="uid://bk8vd6ihwi0i7"]
 
 [ext_resource type="PackedScene" uid="uid://nqiyqnx42m61" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_fullglove_physics_hand.tscn" id="1_1bvp3"]
 [ext_resource type="Material" uid="uid://dyuaw57o8y3i" path="res://addons/godot-xr-tools/materials/highlight.tres" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_272bh"]
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" unique_id=1123688480]
 
-[node name="XROrigin3D" type="XROrigin3D" parent="."]
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=390303957]
 
-[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=313308156]
 
-[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+[node name="LeftController" type="XRController3D" parent="XROrigin3D" unique_id=1787447095]
 tracker = &"left_hand"
 
-[node name="LeftPhysicsHand" parent="XROrigin3D/LeftController" instance=ExtResource("1_1bvp3")]
+[node name="LeftPhysicsHand" parent="XROrigin3D/LeftController" unique_id=1096444466 instance=ExtResource("1_1bvp3")]
 transform = Transform3D(-0.006091124, 0.99998146, 0, -0.99998146, -0.006091124, 0, 0, 0, 1, 0, 0, 0)
 hand_material_override = ExtResource("2_lquwl")
 
-[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+[node name="RightController" type="XRController3D" parent="XROrigin3D" unique_id=1162546378]
 tracker = &"right_hand"
 
-[node name="RightPhysicsHand" parent="XROrigin3D/RightController" instance=ExtResource("3_7mycd")]
+[node name="RightPhysicsHand" parent="XROrigin3D/RightController" unique_id=19386043 instance=ExtResource("3_7mycd")]
 transform = Transform3D(-0.007906279, -0.99996877, 0, 0.99996877, -0.007906279, 0, 0, 0, 1, 0, 0, 0)
 hand_material_override = ExtResource("2_lquwl")
 
-[node name="StartXR" parent="." instance=ExtResource("4_272bh")]
+[node name="StartXR" parent="." unique_id=1153252168 instance=ExtResource("4_272bh")]
 enable_passthrough = true
 
-[node name="Jared" type="Node3D" parent="."]
+[node name="Jared" type="Node3D" parent="." unique_id=434161212]
 
-[node name="Michael" type="Node3D" parent="."]
+[node name="Michael" type="Node3D" parent="." unique_id=1341959356]
+
+[node name="Andrea" type="Node3D" parent="." unique_id=1009871493]
