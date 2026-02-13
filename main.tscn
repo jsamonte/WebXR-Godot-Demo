@@ -40,7 +40,7 @@ enable_passthrough = true
 [node name="Rember" type="Node3D" parent="." unique_id=1199217526]
 
 [node name="Text Bubble" type="Node3D" parent="." unique_id=1510476864]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 0.5, -1.191)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 2, -1.191)
 
 [node name="Sprite3D" type="Sprite3D" parent="Text Bubble" unique_id=339870440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.032014847, 1.1920929e-07, -4.176212)
