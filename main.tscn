@@ -4,9 +4,12 @@
 [ext_resource type="Material" uid="uid://dyuaw57o8y3i" path="res://addons/godot-xr-tools/materials/highlight.tres" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_272bh"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="PackedScene" uid="uid://dy3sv6l52egkk" path="res://textview.tscn" id="5_lquwl"]
+>>>>>>> Stashed changes
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_1bvp3"]
-viewport_path = NodePath("SubViewportContainer/SubViewport")
+[sub_resource type="ViewportTexture" id="ViewportTexture_7mycd"]
 
 [node name="Main" type="Node3D" unique_id=1043923921]
 
@@ -40,8 +43,9 @@ enable_passthrough = true
 [node name="Rember" type="Node3D" parent="." unique_id=1199217526]
 
 [node name="Text Bubble" type="Node3D" parent="." unique_id=1510476864]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 2, -1.191)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 2, 0)
 
+<<<<<<< Updated upstream
 [node name="Sprite3D" type="Sprite3D" parent="Text Bubble" unique_id=339870440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.032014847, 1.1920929e-07, -4.176212)
 texture = SubResource("ViewportTexture_1bvp3")
@@ -65,3 +69,7 @@ offset_right = 584.0
 offset_bottom = 299.0
 text = "Hello World!"
 placeholder_text = "Hello World!"
+=======
+[node name="Sprite3D" parent="Text Bubble" unique_id=1228032165 instance=ExtResource("5_lquwl")]
+texture = SubResource("ViewportTexture_7mycd")
+>>>>>>> Stashed changes
