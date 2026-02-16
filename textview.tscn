@@ -3,14 +3,11 @@
 [ext_resource type="Script" path="res://dialogue_ui.gd" id="1_sm6up"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="2_qqvw4"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_tu4qo"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_sm6up"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [node name="Sprite3D" type="Sprite3D" unique_id=1228032165]
-texture = SubResource("ViewportTexture_tu4qo")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1480991264]
-position = Vector2(581, 325)
+texture = SubResource("ViewportTexture_sm6up")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=195580290]
 custom_minimum_size = Vector2(1024, 512)
