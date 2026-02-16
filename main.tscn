@@ -6,8 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_272bh"]
 [ext_resource type="PackedScene" uid="uid://dy3sv6l52egkk" path="res://textview.tscn" id="5_lquwl"]
 
+<<<<<<< HEAD
 [sub_resource type="ViewportTexture" id="ViewportTexture_lquwl"]
+=======
+<<<<<<< Updated upstream
+[sub_resource type="ViewportTexture" id="ViewportTexture_7mycd"]
+>>>>>>> Jared
 
+=======
+>>>>>>> Stashed changes
 [node name="Main" type="Node3D" unique_id=1043923921]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=2072583787]
@@ -43,4 +50,12 @@ enable_passthrough = true
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 2, 0)
 
 [node name="Sprite3D" parent="Text Bubble" unique_id=1228032165 instance=ExtResource("5_lquwl")]
+<<<<<<< HEAD
 texture = SubResource("ViewportTexture_lquwl")
+=======
+<<<<<<< Updated upstream
+texture = SubResource("ViewportTexture_7mycd")
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Jared
