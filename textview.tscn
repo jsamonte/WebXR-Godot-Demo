@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dy3sv6l52egkk"]
 
+[ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="1_sm6up"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="2_qqvw4"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_tu4qo"]
@@ -36,6 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sm6up")
 
 [node name="DialogueLabel" type="RichTextLabel" parent="SubViewportContainer/SubViewport/DialogueUI" unique_id=509427754]
 layout_mode = 1
