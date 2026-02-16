@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dy3sv6l52egkk"]
 
-[ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="1_sm6up"]
+[ext_resource type="Script" path="res://dialogue_ui.gd" id="1_sm6up"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="2_qqvw4"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_tu4qo"]
@@ -52,7 +52,6 @@ offset_right = 8.503967
 offset_bottom = 72.0
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
-text = "Testing"
 script = ExtResource("2_qqvw4")
 skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
 metadata/_custom_type_script = "uid://g32um0mltv5d"
