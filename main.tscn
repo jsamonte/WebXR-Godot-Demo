@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://dyuaw57o8y3i" path="res://addons/godot-xr-tools/materials/highlight.tres" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_272bh"]
-[ext_resource type="Script" path="res://dialogue_ui.gd" id="5_7mycd"]
+[ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="5_7mycd"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="6_272bh"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_5vw27"]

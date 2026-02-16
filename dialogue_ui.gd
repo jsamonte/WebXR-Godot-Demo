@@ -37,17 +37,21 @@ func show_dialogue():
 		for response in current_dialogue_line.responses:
 			#Creates button to hold choice
 			var button = Button.new()
+			var button3D = Area3D.new() 
 			button.text = response.text
 			button.add_theme_font_size_override("font_size", 24)
 			#If button is pressed, run the on_choice_pressed() function
 			button.pressed.connect(func(): on_choice_pressed(response))
+			button3D.area_entered.connect(func(): on_choice_pressed(response))
 			choices_container.add_child(button)
 	else:
 		#Create default next button to continue dialogue
 		var next_button = Button.new()
+		var button3D = Area3D.new() 
 		next_button.text = "Next >"
 		next_button.add_theme_font_size_override("font_size", 24)
 		next_button.pressed.connect(func(): on_next_pressed())
+		button3D.area_entered.connect(func(): on_next_pressed())
 		choices_container.add_child(next_button)
 		
 #Clear out choices in ChoicesContainer
