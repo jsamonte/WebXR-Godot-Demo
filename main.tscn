@@ -9,8 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://dy3sv6l52egkk" path="res://textview.tscn" id="5_lquwl"]
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
 [sub_resource type="ViewportTexture" id="ViewportTexture_7mycd"]
 
+=======
+>>>>>>> Stashed changes
 [node name="Main" type="Node3D" unique_id=1043923921]
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=2072583787]
@@ -71,5 +74,8 @@ text = "Hello World!"
 placeholder_text = "Hello World!"
 =======
 [node name="Sprite3D" parent="Text Bubble" unique_id=1228032165 instance=ExtResource("5_lquwl")]
+<<<<<<< Updated upstream
 texture = SubResource("ViewportTexture_7mycd")
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -10,6 +10,7 @@ viewport_path = NodePath("SubViewportContainer/SubViewport")
 texture = SubResource("ViewportTexture_tu4qo")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1480991264]
+position = Vector2(581, 325)
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=195580290]
 custom_minimum_size = Vector2(1024, 512)
