@@ -67,7 +67,6 @@ func show_dialogue():
 		button3D.add_child(mesh)
 		label.text = "Next >"
 		
-		
 		next_button.text = "Next >"
 		next_button.add_theme_font_size_override("font_size", 24)
 		next_button.pressed.connect(func(): on_next_pressed())
