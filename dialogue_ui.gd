@@ -37,12 +37,13 @@ func show_dialogue():
 		for response in current_dialogue_line.responses:
 			#Creates button to hold choice
 			var button = Button.new()
+			
 			var button3D = XRToolsInteractableAreaButton.new() 
 			var label = Label3D.new()
 			var mesh = MeshInstance3D.new()
 			var material = StandardMaterial3D.new()
 			material.albedo_texture = load("res://addons/godot-xr-tools/materials/highlight.tres")
-			mesh .material_override
+			mesh.material_override
 			button3D.add_child(label)
 			button3D.add_child(mesh)
 			label.text = response.text
@@ -62,7 +63,7 @@ func show_dialogue():
 		var mesh = MeshInstance3D.new()
 		var material = StandardMaterial3D.new()
 		material.albedo_texture = load("res://addons/godot-xr-tools/materials/highlight.tres")
-		mesh .material_override
+		mesh.material_override
 		button3D.add_child(label)
 		button3D.add_child(mesh)
 		label.text = "Next >"
