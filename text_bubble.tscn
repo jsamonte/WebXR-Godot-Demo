@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cxw3psdwpsan6"]
+
+[ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="1_bo3s3"]
+[ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="2_87vmk"]
+
+[node name="TextBubble" type="Node2D" unique_id=2062768281]
+
+[node name="DialogueUI" type="Control" parent="." unique_id=251438249]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bo3s3")
+
+[node name="DialogueLabel" type="RichTextLabel" parent="DialogueUI" unique_id=68057889]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.020000001
+anchor_top = 0.172
+anchor_right = 0.97900003
+anchor_bottom = 0.625
+offset_left = -25.480001
+offset_top = 39.935997
+offset_right = 8.503967
+offset_bottom = 72.0
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+script = ExtResource("2_87vmk")
+skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
+metadata/_custom_type_script = "uid://g32um0mltv5d"
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="DialogueUI" unique_id=1812114519]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.596
+anchor_right = 0.97900003
+anchor_bottom = 1.0
+offset_left = -32.84
+offset_top = -49.152008
+offset_right = 0.5039673
+offset_bottom = -3.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1717226245]
+position = Vector2(576, 318)
