@@ -3,17 +3,20 @@
 [ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="1_bo3s3"]
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="2_87vmk"]
 
-[node name="SubViewportContainer" type="SubViewportContainer" unique_id=616856629]
-offset_right = 1148.0
-offset_bottom = 647.0
+[node name="Node2D" type="Node2D" unique_id=1396218703]
 
-[node name="SubViewport" type="SubViewport" parent="." unique_id=1694319518]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1829276920]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1432978812]
+transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1024, 512)
 size_2d_override = Vector2i(1024, 512)
 render_target_update_mode = 4
 
-[node name="DialogueUI" type="Control" parent="SubViewport" unique_id=1455641804]
+[node name="DialogueUI" type="Control" parent="SubViewportContainer/SubViewport" unique_id=1193032305]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,7 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bo3s3")
 
-[node name="DialogueLabel" type="RichTextLabel" parent="SubViewport/DialogueUI" unique_id=1691736496]
+[node name="DialogueLabel" type="RichTextLabel" parent="SubViewportContainer/SubViewport/DialogueUI" unique_id=1213802734]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.020000001
@@ -39,7 +42,7 @@ script = ExtResource("2_87vmk")
 skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
 metadata/_custom_type_script = "uid://g32um0mltv5d"
 
-[node name="ChoicesContainer" type="VBoxContainer" parent="SubViewport/DialogueUI" unique_id=1419712918]
+[node name="ChoicesContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/DialogueUI" unique_id=1206029558]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.035
@@ -51,5 +54,5 @@ offset_top = -49.152008
 offset_right = 0.5039673
 offset_bottom = -3.0
 
-[node name="Camera2D" type="Camera2D" parent="SubViewport" unique_id=1723589295]
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport" unique_id=762195724]
 position = Vector2(576, 318)

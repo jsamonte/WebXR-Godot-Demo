@@ -5,17 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://cigx2gnf4tg4d" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_fullglove_physics_hand.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="3_272bh"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="4_272bh"]
-[ext_resource type="Script" uid="uid://cnkjjp5e2ppi3" path="res://dialogue_ui.gd" id="5_7mycd"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://cxw3psdwpsan6" path="res://text_bubble.tscn" id="7_272bh"]
-[ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="9_kek77"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_kek77"]
-viewport_path = NodePath("SubViewportContainer/SubViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_272bh"]
-resource_local_to_scene = true
-albedo_texture = SubResource("ViewportTexture_kek77")
 
 [node name="Main" type="Node3D" unique_id=1043923921]
 
@@ -60,66 +51,6 @@ enable_passthrough = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 1, -0.20232525, -0.23378354, -1.3076346)
 collision_layer = 138
 scene = ExtResource("7_272bh")
-viewport_size = Vector2(100, 75)
-material = SubResource("StandardMaterial3D_272bh")
+viewport_size = Vector2(1024, 576)
 transparent = 1
 scene_properties_keys = PackedStringArray()
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Viewport2Din3D" unique_id=1601500023]
-custom_minimum_size = Vector2(1024, 512)
-anchors_preset = -1
-anchor_left = 0.060000002
-anchor_top = 0.11100001
-anchor_right = 0.94400007
-anchor_bottom = 0.864
-offset_left = 10.879997
-offset_top = -45.92801
-offset_right = 16.511963
-offset_bottom = -21.87201
-
-[node name="SubViewport" type="SubViewport" parent="Viewport2Din3D/SubViewportContainer" unique_id=152549915]
-handle_input_locally = false
-size = Vector2i(1024, 512)
-size_2d_override = Vector2i(1024, 512)
-render_target_update_mode = 4
-
-[node name="DialogueUI" type="Control" parent="Viewport2Din3D/SubViewportContainer/SubViewport" unique_id=860390501]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("5_7mycd")
-
-[node name="DialogueLabel" type="RichTextLabel" parent="Viewport2Din3D/SubViewportContainer/SubViewport/DialogueUI" unique_id=1722834073]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.020000001
-anchor_top = 0.172
-anchor_right = 0.97900003
-anchor_bottom = 0.625
-offset_left = -25.480001
-offset_top = 39.935997
-offset_right = 8.503967
-offset_bottom = 72.0
-theme_override_font_sizes/normal_font_size = 32
-bbcode_enabled = true
-script = ExtResource("9_kek77")
-skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
-metadata/_custom_type_script = "uid://g32um0mltv5d"
-
-[node name="ChoicesContainer" type="VBoxContainer" parent="Viewport2Din3D/SubViewportContainer/SubViewport/DialogueUI" unique_id=2048306169]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.035
-anchor_top = 0.596
-anchor_right = 0.97900003
-anchor_bottom = 1.0
-offset_left = -32.84
-offset_top = -49.152008
-offset_right = 0.5039673
-offset_bottom = -3.0
-
-[node name="Camera2D" type="Camera2D" parent="Viewport2Din3D/SubViewportContainer/SubViewport" unique_id=1256265943]
-position = Vector2(576, 318)
