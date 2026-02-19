@@ -7,6 +7,7 @@
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [node name="Sprite3D" type="Sprite3D" unique_id=1228032165]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
 texture = SubResource("ViewportTexture_sm6up")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=195580290]
