@@ -42,7 +42,7 @@ enable_passthrough = true
 [node name="Rember" type="Node3D" parent="." unique_id=1199217526]
 
 [node name="Text Bubble" type="Node3D" parent="." unique_id=1510476864]
-transform = Transform3D(0.099996194, 0, 8.7265355e-05, 0, 0.1, 0, -0.00087265356, 0, 0.009999619, 0, 0, 0)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.01, 0, 1, -0.1)
 
 [node name="Sprite3D" type="Sprite3D" parent="Text Bubble" unique_id=2022379884]
 texture = SubResource("ViewportTexture_7mycd")
@@ -61,6 +61,7 @@ offset_bottom = -21.87201
 metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="Text Bubble/Sprite3D/SubViewportContainer" unique_id=1904873897]
+transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1024, 512)
 size_2d_override = Vector2i(1024, 512)
